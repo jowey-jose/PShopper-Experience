@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:pshop/constants.dart';
 import 'package:pshop/models/Product.dart';
-
 import 'components/color_dot.dart';
 
 class DetailsScreen extends StatelessWidget {
+  static String routeName = "/details";
+  @override
   const DetailsScreen({Key? key, required this.product}) : super(key: key);
 
   final Product product;
@@ -101,7 +102,7 @@ class DetailsScreen extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                            primary: primaryColor,
+                            primary: kPrimaryColor,
                             shape: const StadiumBorder()),
                         child: const Text("Add to Cart"),
                       ),

@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:pshop/components/coustom_bottom_nav_bar.dart';
 import 'package:pshop/constants.dart';
 
+import '../../enum.dart';
 import 'components/categories.dart';
 import 'components/new_arrival_products.dart';
 import 'components/popular_products.dart';
 import 'components/search_form.dart';
 
 class HomeScreen extends StatelessWidget {
+  static String routeName = "/home";
+  @override
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
@@ -64,6 +68,7 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: const CustomBottomNavBar(selectedMenu: MenuState.home),
     );
   }
 }
