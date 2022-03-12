@@ -1,0 +1,17 @@
+{
+  "name": "pshopper-experience",
+  "version": "1.0.0",
+  "description": "A system to create a personal shopping experince based on a facial recognition algorithim for reccommendaytyion and rewarding program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
