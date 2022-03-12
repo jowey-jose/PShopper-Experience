@@ -1,0 +1,28 @@
+{
+  "name": "pshopper-experience",
+  "version": "1.0.0",
+  "description": "A system to create a personal shopping experince based on a facial recognition algorithim for reccommendaytyion and rewarding program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^3.14.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "canvas": "^2.9.0",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "face-api.js": "^0.22.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

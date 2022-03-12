@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pshop/constants.dart';
+import 'package:pshop/routes.dart';
 import 'package:pshop/screens/home/home_screen.dart';
+import 'package:pshop/screens/splash/splash_screen.dart';
+import 'package:pshop/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,19 +18,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Pshop',
-      theme: ThemeData(
-        scaffoldBackgroundColor: bgColor,
-        primarySwatch: Colors.blue,
-        fontFamily: "Gordita",
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-        ),
-        textTheme: const TextTheme(
-          bodyText2: TextStyle(color: Colors.black54),
-        ),
-      ),
-      home: const HomeScreen(),
+      theme: theme(),
+      // home: SplashScreen(),
+      // We use routeName so that we dont need to remember the name
+      initialRoute: SplashScreen.routeName,
+      routes: routes,
     );
   }
 }
