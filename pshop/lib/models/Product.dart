@@ -13,6 +13,14 @@ class Product {
     required this.price,
     this.bgColor = const Color(0xFFEFEFF2),
   });
+  factory Product.fromJson(Map<String, dynamic> json) {
+    return Product(
+      id: json['id'],
+      title: json['title'],
+      price: json['price'],
+       image: '',
+    );
+  }
 }
 
 List<Product> demo_product = [

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pshop/screens/profile/components/upload_image.dart';
 
 import 'profile_menu.dart';
 import 'profile_pic.dart';
@@ -15,7 +16,7 @@ class Body extends StatelessWidget {
           ProfileMenu(
             text: "My Account",
             icon: "assets/icons/User Icon.svg",
-            press: () => {},
+            press: () => { Navigator.pushNamed(context, UploadImageScreen.routeName)},
           ),
           ProfileMenu(
             text: "Notifications",
